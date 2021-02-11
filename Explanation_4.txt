@@ -1,0 +1,15 @@
+Problem 4 – Active directory
+
+Description
+The code for the active directory problem is based on a recursion call. The functions arguments 
+are the searched user and the group in which we have to search. As the class Group() allows to 
+add both users and groups to a given group, we have to iterate through all items in the main group 
+(argument) and search for the user. Then the recursion call is made for all subgroups belonging 
+to the arguments group until all subgroups are searched.
+
+Time Complexity
+The time complexity increases linearly, depending on the number of subgroups existing. So we are 
+expecting a complexity of O(n) where n is the sum of groups and their subgroups.
+
+Space Complexity
+Like time complexity O(n).

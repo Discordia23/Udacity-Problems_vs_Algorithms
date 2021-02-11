@@ -1,0 +1,17 @@
+Problem 6 – Union and Intersection
+
+Description
+Most of the code has already been done by Udacity, like the Node class and the LinkedList class. 
+However, I added some details, like a tail pointer into the append() method. This allows the 
+method to reach a time complexity of O(1) instead of O(n). Also the time complexity of the size() 
+method could be similarly improved. Both functions union() and intersection() which needed to be 
+written are based on sets.
+
+Time Complexity
+Although the time complexity of some methods like append() and size() has been improved, the overall 
+worse case time complexity remains at O(n): this is due to the union() function, where the addition 
+of 2 lists and the return of a new one results in O(n). Also the intersection function has a time 
+complexity of O(n) where n is the length of the longest set.
+
+Space Complexity
+O(n) where n is the length of both lists.

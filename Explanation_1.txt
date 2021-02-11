@@ -1,0 +1,14 @@
+Problem 1 – LRU Cache
+Description
+The code for this problem is mainly based on a doubly linked list because it allows to easily remove 
+nodes from any position within the linked list without iterating though each element, if a cache is present. 
+The cache is a dictionary that preserves information about the nodes and their position in the linked list. 
+It tracks each interaction with nodes, like adding, accessing and removing.
+
+Time Complexity
+According to the requirements, the complexity of this code is O(1): Thanks to the cache and the 
+doubly linked list which is accessible from both “ends”, each operation like removing or appending 
+a node to the linked list takes constant time.
+
+Space Complexity
+O(n) where n is the cache capacity.

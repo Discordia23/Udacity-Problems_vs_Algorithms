@@ -1,0 +1,13 @@
+Problem 5 – Blockchain
+
+Description
+The code for the Blockchain problem is based on a linked list with two pointers (head, tail). 
+This allows to append a new block immediately, without traversing the chain. Each new block 
+contains a hash from the previous block which is computed in the Block() class.
+
+Time Complexity
+The time complexity for appending a node (block) is constant because the tail of the blockchain
+ is immediately accessible: O(1).
+
+Space Complexity
+O(n) where n is the number of blocks.

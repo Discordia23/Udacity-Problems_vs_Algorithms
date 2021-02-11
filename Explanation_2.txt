@@ -1,0 +1,13 @@
+Problem 2 – File Recursion
+Description
+The code for the File Recursion problem is based on a recursion call. The functions arguments
+are the suffix (extension of a file) and the path where we search for the suffix. First, we iterate 
+through all items in the main path (argument) and search for files with the correct suffix. Then 
+the recursion call is made for all subdirectories in the current path until all nested directories are searched.
+
+Time Complexity
+The time complexity is depending on the items (files and directories) found in the argument’s path. 
+As we iterate through each file and check all nested directories, the complexity is O(n) where n is the sum of files and directories.
+
+Space Complexity
+O(n) where n is the number of files.

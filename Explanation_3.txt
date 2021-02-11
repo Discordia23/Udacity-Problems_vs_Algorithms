@@ -1,0 +1,16 @@
+Problem 3 – Huffman Code
+
+Description
+For this problem, I implemented two different classes: the Node() class and the Huffmann_tree() class. 
+The Huffmann_tree() class has two methods: one for the creation of a tree using a character frequency 
+dictionary and one for the encoding of the string characters. The main data structures used in this problem 
+are a tree, a priority queue (made with the heapq module), a frequency dictionary, a recursion function to 
+encode the tree and a hashmap to slightly improve the time complexity of the encoding function.
+
+Time Complexity
+The encoding function takes O(nlogn): each insertion of the heap takes O(logn) for O(n) iterations.
+The decoding function iterates through the entire encoded string and traverses the tree until it finds a leaf. 
+In the worse case this would have a time complexity of O(n).
+
+Space Complexity
+O(n) based on the length of the string and the height of the tree.
